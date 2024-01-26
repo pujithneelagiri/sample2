@@ -3,8 +3,8 @@ pipeline {
 
     stages {
         stage('Build') {
-            steps {
-                echo 'Building the application'
+            stage(' checkout') {
+                git checkout scm
             }
         }
 
